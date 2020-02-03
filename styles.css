@@ -14,15 +14,14 @@ body {
   box-sizing: border-box;
 }
 main {
-  min-width: 110rem;
-  overflow-x: hidden;
-
+  min-width: 150rem;
 }
 .front_page {
   min-height: 100rem;
   position: relative;
   background: linear-gradient(to right, rgb(25, 63, 231), rgb(22, 123, 182));
   z-index: 0;
+  overflow-x: hidden;
 }
 
 .front_page .github {
@@ -37,7 +36,7 @@ main {
   z-index: 100;
 }
 
-.front_page .github a{
+.front_page .github a {
   color: #fff;
   cursor: pointer;
 }
