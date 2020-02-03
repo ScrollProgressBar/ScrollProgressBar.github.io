@@ -1,190 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ScrollProgressBar.js - A super lightweight and fast library</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
 
-  <body>
-    <main>
-      <section class="front_page">
-        <div class="front_page-firstpart">
-          <div class="front_page--wrapper">
-            <h1>ScrollProgressBar.js</h1>
-            <p>
-              - A super lightweight and robust library for displaying how far a
-              user has scrolled on a webpage.
-            </p>
-            <p class="download">
-              <a href="./ScrollProgressBar.min.js">Get minified code</a>
-            </p>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ScrollProgressBar.js - A super lightweight and fast library</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <main>
+    <section class="front_page">
+      <span class="github"><a href="https://github.com/MathiasWP/ScrollProgressBar.js">GitHub link!</a></span>
+      <div class="front_page-firstpart">
+        <div class="front_page--wrapper">
+          <h1>ScrollProgressBar.js</h1>
+          <p>
+            - A super lightweight and robust library for displaying how far an user has scrolled on a webpage.
+          </p>
+          <p class="download">
+            <a href="./ScrollProgressBar.min.js">Get minified code</a>
+          </p>
         </div>
-        <div class="supports">
-          Supports all major browsers:
-          <section class="supports_list">
-            <span class="chrome"
-              >Chrome
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/1024px-Google_Chrome_icon_%28September_2014%29.svg.png"
-                alt="Google Chrome Logo"
-              />
-            </span>
-            <span class="safari"
-              >Safari
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Safari_browser_logo.svg/1028px-Safari_browser_logo.svg.png"
-                alt="Safari Logo"
-              />
-            </span>
-            <span class="firefox"
-              >Firefox
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Firefox_Logo%2C_2017.png"
-                alt="Firefox Logo"
-              />
-            </span>
-            <span class="internetexplorer"
-              >Internet Explorer
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Internet_Explorer_10%2B11_computer_icon.png"
-                alt="Internet Explorer Logo"
-              />
-            </span>
-            <span class="edge"
-              >Microsoft Edge
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Microsoft_Edge_logo.svg/960px-Microsoft_Edge_logo.svg.png"
-                alt="Microsoft Edge Logo"
-              />
-            </span>
-            <span class="opera"
-              >Opera
-              <img
-                src="https://operasoftware.github.io/logo/dest/logo/full-red.svg"
-                alt="Opera Logo"
-              />
-            </span>
-          </section>
-        </div>
-        <div class="gradient-background"></div>
-      </section>
-      <section class="demo_part">
-        <div class="demo_part--implementation">
-          <h1>
-            ScrollProgressBar is easy to implement:
-          </h1>
-          <span class="demo_part--implementation-steps">
-            1. Add the script source to your HTML. <br />
-            2. Start the ScrollProgressBar:
+      </div>
+      <div class="supports">
+        Supports all major browsers:
+        <section class="supports_list">
+          <span class="chrome">Chrome
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/1024px-Google_Chrome_icon_%28September_2014%29.svg.png"
+              alt="Google Chrome Logo" />
           </span>
-          <span class="implementation-code">
-            <code>
+          <span class="safari">Safari
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Safari_browser_logo.svg/1028px-Safari_browser_logo.svg.png"
+              alt="Safari Logo" />
+          </span>
+          <span class="firefox">Firefox
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Firefox_Logo%2C_2017.png" alt="Firefox Logo" />
+          </span>
+          <span class="internetexplorer">Internet Explorer
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Internet_Explorer_10%2B11_computer_icon.png" alt="Internet Explorer Logo"
+            />
+          </span>
+          <span class="edge">Microsoft Edge
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Microsoft_Edge_logo.svg/960px-Microsoft_Edge_logo.svg.png"
+              alt="Microsoft Edge Logo" />
+          </span>
+          <span class="opera">Opera
+            <img src="https://operasoftware.github.io/logo/dest/logo/full-red.svg" alt="Opera Logo" />
+          </span>
+        </section>
+      </div>
+      <div class="gradient-background"></div>
+    </section>
+    <section class="demo_part">
+      <div class="demo_part--implementation">
+        <h1>
+          ScrollProgressBar is easy to implement:
+        </h1>
+        <span class="demo_part--implementation-steps">
+          1. Add the script source to your HTML. <br /> 2. Start the ScrollProgressBar:
+        </span>
+        <span class="implementation-code">
+          <code>
               <span class="dark">new</span>
               <span class="object">ScrollProgressBar</span
               ><span class="parenthesis">()</span>.<span class="function"
                 >start</span
               ><span class="parenthesis">()</span>;
             </code>
-          </span>
-          <h3>There are different configurable options you can implement:</h3>
-          <div class="demo_part--implementation-table">
-            <table>
-              <tr>
-                <td class="option-table">
-                  color
-                  <p>is #ffa453 by default.</p>
-                </td>
-                <td>
-                  Choose the color of the bar. Accepts rgb, rgba, hex + any
-                  other CSS-color value.
-                </td>
-              </tr>
-              <tr>
-                <td class="option-table">
-                  opacity
-                  <p>is 1 by default.</p>
-                </td>
-                <td>
-                  Choose the opacity of the bar.
-                </td>
-              </tr>
-              <tr>
-                <td class="option-table">
-                  placement
-                  <p>is top by default.</p>
-                </td>
-                <td>
-                  Choose where you want the bar to be placed on the screen. You
-                  can choose between top, left, right and bottom.
-                </td>
-              </tr>
-              <tr>
-                <td class="option-table">
-                  size
-                  <p>is 10px by default.</p>
-                </td>
-                <td>
-                  Choose the size of the bar. Accepts all valid CSS-size values
-                  (px, em, rem etc.)
-                </td>
-              </tr>
-              <tr>
-                <td class="option-table">
-                  zIndex
-                  <p>is 9999 by default.</p>
-                </td>
-                <td>
-                  Set the z-index of the bar. 9999 should be fine in most cases,
-                  but if it isn't then set it to your desired value.
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="demo_part--implementation-examples">
-            <h2>Test out the different options:</h2>
+        </span>
+        <h3>There are different configurable options you can implement:</h3>
+        <div class="demo_part--implementation-table">
+          <table>
+            <tr>
+              <td class="option-table">
+                color
+                <p>is #ffa453 by default.</p>
+              </td>
+              <td>
+                Choose the color of the bar. Accepts rgb, rgba, hex + any other CSS-color value.
+              </td>
+            </tr>
+            <tr>
+              <td class="option-table">
+                opacity
+                <p>is 1 by default.</p>
+              </td>
+              <td>
+                Choose the opacity of the bar.
+              </td>
+            </tr>
+            <tr>
+              <td class="option-table">
+                placement
+                <p>is top by default.</p>
+              </td>
+              <td>
+                Choose where you want the bar to be placed on the screen. You can choose between top, left, right and bottom.
+              </td>
+            </tr>
+            <tr>
+              <td class="option-table">
+                size
+                <p>is 10px by default.</p>
+              </td>
+              <td>
+                Choose the size of the bar. Accepts all valid CSS-size values (px, em, rem etc.)
+              </td>
+            </tr>
+            <tr>
+              <td class="option-table">
+                zIndex
+                <p>is 9999 by default.</p>
+              </td>
+              <td>
+                Set the z-index of the bar. 9999 should be fine in most cases, but if it isn't then set it to your desired value.
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="demo_part--implementation-examples">
+          <h2>Test out the different options:</h2>
 
-            <section>
-              <h4>Select color:</h4>
-              <input type="color" class="color_" value="#ffa453" />
-            </section>
-            <section>
-              <h4>Select opacity:</h4>
-              <input
-                type="range"
-                min="0"
-                max="1"
-                value="1"
-                step="0.1"
-                class="opacity_"
-              />
-              <output id="rangevalue">1</output>
-            </section>
-            <section>
-              <h4>Select placement:</h4>
-              <select class="placement_">
-                <option value="top">Top</option>
-                <option value="left">left</option>
-                <option value="right">right</option>
-                <option value="bottom">bottom</option>
-              </select>
-            </section>
-            <section>
-              <h4>Select size:</h4>
-              <input type="tel" class="size_" value="10" />px
-            </section>
+          <section>
+            <h4>Select color:</h4>
+            <input type="color" class="color_" value="#ffa453" />
+          </section>
+          <section>
+            <h4>Select opacity:</h4>
+            <input type="range" min="0" max="1" value="1" step="0.1" class="opacity_" />
+            <output id="rangevalue">1</output>
+          </section>
+          <section>
+            <h4>Select placement:</h4>
+            <select class="placement_">
+              <option value="top">Top</option>
+              <option value="left">left</option>
+              <option value="right">right</option>
+              <option value="bottom">bottom</option>
+            </select>
+          </section>
+          <section>
+            <h4>Select size:</h4>
+            <input type="tel" class="size_" value="10" />px
+          </section>
 
-            <section>
-              <h4>Output code:</h4>
-              <span class="output-code">
-                <code>
+          <section>
+            <h4>Output code:</h4>
+            <span class="output-code">
+              <code>
                   <span class="dark">new</span>
                   <span class="object">ScrollProgressBar</span
                   ><span class="parenthesis">(</span
@@ -202,51 +168,52 @@
                     >start</span
                   ><span class="parenthesis">()</span>;
                 </code>
-              </span>
-            </section>
-          </div>
+            </span>
+          </section>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>
 
-  <script src="./src/ScrollProgressBar.js"></script>
-  <script src="./src/ScrollProgressBarDemoHelp.js"></script>
+<script src="./src/ScrollProgressBar.js"></script>
+<script src="./src/ScrollProgressBarDemoHelp.js"></script>
 
-  <script>
-    const color_ = document.querySelector(".color_"),
-      color_value = document.querySelector(".color_value"),
-      opacity_ = document.querySelector(".opacity_"),
-      opacity_value = document.querySelector(".opacity_value"),
-      placement_ = document.querySelector(".placement_"),
-      placement_value = document.querySelector(".placement_value"),
-      size_ = document.querySelector(".size_"),
-      size_value = document.querySelector(".size_value");
+<script>
+  const color_ = document.querySelector(".color_"),
+    color_value = document.querySelector(".color_value"),
+    opacity_ = document.querySelector(".opacity_"),
+    opacity_value = document.querySelector(".opacity_value"),
+    placement_ = document.querySelector(".placement_"),
+    placement_value = document.querySelector(".placement_value"),
+    size_ = document.querySelector(".size_"),
+    size_value = document.querySelector(".size_value");
 
-    let s_bar = new ScrollProgressBar();
-    s_bar.start();
+  let s_bar = new ScrollProgressBar();
+  s_bar.start();
 
-    color_.addEventListener("change", function() {
-      s_bar.setColor(this.value);
-      color_value.innerHTML = this.value;
-    });
+  color_.addEventListener("change", function () {
+    s_bar.setColor(this.value);
+    color_value.innerHTML = this.value;
+  });
 
-    opacity_.addEventListener("mousemove", function() {
-      document.querySelector("#rangevalue").value = this.value;
-      s_bar.setOpacity(this.value);
-      opacity_value.innerHTML = this.value;
-    });
+  opacity_.addEventListener("mousemove", function () {
+    document.querySelector("#rangevalue").value = this.value;
+    s_bar.setOpacity(this.value);
+    opacity_value.innerHTML = this.value;
+  });
 
-    placement_.addEventListener("change", function() {
-      s_bar.setPlacement(this.value);
-      placement_value.innerHTML = this.value;
-    });
+  placement_.addEventListener("change", function () {
+    s_bar.setPlacement(this.value);
+    placement_value.innerHTML = this.value;
+  });
 
-    size_.addEventListener("input", function() {
-      if (this.value.length === 0) return;
-      s_bar.setSize(this.value + "px");
-      size_value.innerHTML = this.value + "px";
-      console.log(s_bar.options.size);
-    });
-  </script>
+  size_.addEventListener("input", function () {
+    if (this.value.length === 0) return;
+    s_bar.setSize(this.value + "px");
+    size_value.innerHTML = this.value + "px";
+    console.log(s_bar.options.size);
+  });
+</script>
+
 </html>
