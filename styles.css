@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
 }
 main {
-  min-width: 150rem;
+  min-width: 100rem;
 }
 .front_page {
   min-height: 100rem;
