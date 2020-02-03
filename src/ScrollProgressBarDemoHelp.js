@@ -5,7 +5,7 @@ ScrollProgressBar.prototype.setColor = function (color) {
     document.querySelector("style") ||
     document.getElementsByTagName("style")[0];
 
-  var bar_current = document.querySelector('[id|="_scrollbar"]') || document.getElementsByName('span')[document.getElementsByName('span').length - 1];
+  var bar_current = document.getElementsByTagName('span')[document.getElementsByTagName('span').length - 1];
 
   bar_current.parentNode.removeChild(bar_current)
   styleS.parentNode.removeChild(styleS);
@@ -19,7 +19,7 @@ ScrollProgressBar.prototype.setOpacity = function (opacity) {
     document.querySelector("style") ||
     document.getElementsByTagName("style")[0];
 
-  var bar_current = document.querySelector('[id|="_scrollbar"]') || document.getElementsByName('span')[document.getElementsByName('span').length - 1];
+  var bar_current = document.getElementsByTagName('span')[document.getElementsByTagName('span').length - 1];
   bar_current.parentNode.removeChild(bar_current)
 
   styleS.parentNode.removeChild(styleS);
@@ -32,7 +32,7 @@ ScrollProgressBar.prototype.setPlacement = function (placement) {
     document.querySelector("style") ||
     document.getElementsByTagName("style")[0];
 
-  var bar_current = document.querySelector('[id|="_scrollbar"]') || document.getElementsByName('span')[document.getElementsByName('span').length - 1];
+  var bar_current = document.getElementsByTagName('span')[document.getElementsByTagName('span').length - 1];
 
   bar_current.parentNode.removeChild(bar_current)
   styleS.parentNode.removeChild(styleS);
@@ -45,7 +45,7 @@ ScrollProgressBar.prototype.setSize = function (size) {
     document.querySelector("style") ||
     document.getElementsByTagName("style")[0];
 
-  var bar_current = document.querySelector('[id|="_scrollbar"]') || document.getElementsByName('span')[document.getElementsByName('span').length - 1];
+  var bar_current = document.getElementsByTagName('span')[document.getElementsByTagName('span').length - 1];
 
   bar_current.parentNode.removeChild(bar_current)
   styleS.parentNode.removeChild(styleS);
