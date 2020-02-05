@@ -59,7 +59,7 @@ main {
 }
 
 .front_page--wrapper::before {
-  content: "Only 3kb!";
+  content: "Only 4kb!";
   position: absolute;
   right: -3rem;
   top: -1rem;
