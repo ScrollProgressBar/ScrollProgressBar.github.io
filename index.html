@@ -238,7 +238,7 @@
 
     color_.addEventListener('change', function() {
       s_bar.setColor(this.value);
-      color_value.innerHTML = this.value;
+      color_value.innerHTML = "'" + this.value + "'";
     });
 
     opacity_.addEventListener('mousemove', function() {
@@ -249,13 +249,13 @@
 
     placement_.addEventListener('change', function() {
       s_bar.setPlacement(this.value);
-      placement_value.innerHTML = this.value;
+      placement_value.innerHTML = "'" + this.value + "'";
     });
 
     size_.addEventListener('input', function() {
       if (this.value.length === 0) return;
       s_bar.setSize(this.value + 'px');
-      size_value.innerHTML = this.value + 'px';
+      size_value.innerHTML = "'" + this.value + "px'";
       console.log(s_bar.options.size);
     });
   </script>
