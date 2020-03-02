@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
 }
 main {
-  min-width: 150rem;
+  min-width: 110rem;
 }
 .front_page {
   min-height: 100rem;
@@ -59,7 +59,7 @@ main {
 }
 
 .front_page--wrapper::before {
-  content: 'Only 3kb!';
+  content: 'Only 4kb!';
   position: absolute;
   right: -3rem;
   top: -1rem;
