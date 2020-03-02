@@ -124,7 +124,7 @@ main {
 }
 
 .supports_list .internetexplorer::after {
-  content: 'Down to v.7!';
+  content: 'Down to v.9!';
   position: absolute;
   font-size: 1.3rem;
   width: 10rem;
